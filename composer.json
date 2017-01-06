@@ -1,0 +1,34 @@
+{
+  "name": "fusonic/graph-builder",
+  "description": "A PHP library to build GraphQL configurations from POPOs with annotations.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fusonic GmbH",
+      "email": "office@fusonic.net"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "doctrine/annotations": "^1.3",
+    "phpdocumentor/reflection-docblock": "^3.1",
+    "php-di/phpdoc-reader": "^2.0",
+    "webonyx/graphql-php": "^0.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fusonic\\GraphBuilder\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fusonic\\GraphBuilder\\Tests\\": "tests/",
+      "GraphQL\\Examples\\Blog\\": "examples/01-blog/Blog/",
+      "GraphQL\\Examples\\BlogNg\\": "examples/01-blog-ng/Blog/"
+    }
+  }
+}
